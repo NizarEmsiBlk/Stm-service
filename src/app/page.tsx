@@ -99,19 +99,6 @@ export default function Home() {
                     </div>
                     
                     <button
-                      onClick={() => scrollToSection('expertise')}
-                      className="w-full text-left px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 flex items-center space-x-3 group"
-                    >
-                      <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <span className="text-white text-sm font-bold">⚙️</span>
-                      </div>
-                      <div>
-                        <div className="font-medium">Our Expertise</div>
-                        <div className="text-xs text-gray-500">Technical excellence in action</div>
-                      </div>
-                    </button>
-                    
-                    <button
                       onClick={() => scrollToSection('team-safety')}
                       className="w-full text-left px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 flex items-center space-x-3 group"
                     >
@@ -121,6 +108,19 @@ export default function Home() {
                       <div>
                         <div className="font-medium">Our Team</div>
                         <div className="text-xs text-gray-500">Safety first, teamwork always</div>
+                      </div>
+                    </button>
+                    
+                    <button
+                      onClick={() => scrollToSection('expertise')}
+                      className="w-full text-left px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 flex items-center space-x-3 group"
+                    >
+                      <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <span className="text-white text-sm font-bold">⚙️</span>
+                      </div>
+                      <div>
+                        <div className="font-medium">Our Expertise</div>
+                        <div className="text-xs text-gray-500">Technical excellence in action</div>
                       </div>
                     </button>
                     

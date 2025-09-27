@@ -1043,7 +1043,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold">Phone</h3>
-                    <p className="text-gray-600">+212 XXX XXX XXX</p>
+                    <p className="text-gray-600">+(212) 539 32 41 71</p>
                   </div>
                 </div>
                 

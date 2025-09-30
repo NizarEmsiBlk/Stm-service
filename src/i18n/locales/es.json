@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "advantages": "Ventajas",
+    "team": "Equipo",
+    "contact": "Contacto",
+    "teamExcellence": "Excelencia del Equipo",
+    "discoverExpertise": "Descubre nuestra experiencia",
+    "ourTeam": "Nuestro Equipo",
+    "safetyFirst": "Seguridad primero, trabajo en equipo siempre",
+    "ourExpertise": "Nuestra Experiencia",
+    "technicalExcellence": "Excelencia técnica en acción",
+    "emergencyResponse": "Respuesta de Emergencia",
+    "criticalMaintenance": "Mantenimiento crítico 24/7"
+  },
+  "hero": {
+    "title": "STM Services",
+    "subtitle": "Mantenimiento de Aerogeneradores",
+    "description": "Servicios profesionales de mantenimiento y reparación de aerogeneradores en Tánger. Garantizando el rendimiento óptimo y la longevidad de sus activos de energía renovable.",
+    "ourServices": "Nuestros Servicios",
+    "getQuote": "Obtener Cotización",
+    "expertTechnicians": "Técnicos Expertos en Acción",
+    "certifiedProfessionalsDescription": "Nuestros profesionales certificados aseguran los más altos estándares de mantenimiento y seguridad de aerogeneradores.",
+    "professionalService": "Servicio Profesional",
+    "service247": "24/7",
+    "service": "Servicio",
+    "reliable100": "100%",
+    "reliable": "Confiable"
+  },
+  "about": {
+    "title": "Acerca de STM Services",
+    "description1": "Ubicado en el corazón de Tánger, STM Services es su socio de confianza para el mantenimiento y reparación de aerogeneradores. Con años de experiencia en el sector de energías renovables, proporcionamos soluciones integrales para mantener sus sistemas de energía eólica funcionando a máximo rendimiento.",
+    "description2": "Nuestro equipo de técnicos certificados combina experiencia técnica con un compromiso con la seguridad y la excelencia. Entendemos la importancia crítica de mantener la infraestructura de energía renovable y trabajamos incansablemente para minimizar el tiempo de inactividad mientras maximizamos la eficiencia.",
+    "emergencySupport": "Soporte de Emergencia",
+    "turbinesServiced": "Turbinas Atendidas",
+    "yearsExperience": "Años de Experiencia",
+    "safetyRecord": "Récord de Seguridad",
+    "expertTechnicians": "Técnicos Expertos en Acción",
+    "certifiedProfessionals": "Nuestros profesionales certificados aseguran los más altos estándares de mantenimiento y seguridad de aerogeneradores."
+  },
+  "services": {
+    "ourExpertise": "Nuestra Experiencia",
+    "title": "Nuestros Servicios",
+    "subtitle": "Nuestra Experiencia",
+    "description": "Soluciones integrales de mantenimiento de aerogeneradores para mantener sus sistemas de energía renovable funcionando a máxima eficiencia",
+    "preventiveMaintenance": {
+      "title": "Mantenimiento Preventivo",
+      "description": "Inspecciones regulares y mantenimiento para prevenir averías costosas y extender la vida útil de las turbinas."
+    },
+    "emergencyRepairs": {
+      "title": "Reparaciones de Emergencia",
+      "description": "Servicios de reparación de emergencia 24/7 para minimizar el tiempo de inactividad y restaurar operaciones rápidamente."
+    },
+    "componentReplacement": {
+      "title": "Reemplazo de Componentes",
+      "description": "Reemplazo profesional de componentes de turbinas con piezas de alta calidad e instalación experta."
+    },
+    "performanceOptimization": {
+      "title": "Optimización del Rendimiento",
+      "description": "Diagnósticos avanzados y optimización para maximizar la producción de energía y eficiencia."
+    },
+    "safetyInspections": {
+      "title": "Inspecciones de Seguridad",
+      "description": "Evaluaciones de seguridad integrales para asegurar el cumplimiento de estándares y regulaciones industriales."
+    },
+    "technicalConsultancy": {
+      "title": "Consultoría Técnica",
+      "description": "Asesoramiento experto en actualizaciones de turbinas, estrategias de mantenimiento y mejoras operacionales."
+    }
+  },
+  "advantages": {
+    "ourAdvantages": "Nuestras Ventajas",
+    "title": "Por Qué Elegirnos",
+    "subtitle": "Nuestras Ventajas",
+    "description": "Nuestras ventajas competitivas que nos convierten en la opción preferida para el mantenimiento de aerogeneradores en Tánger",
+    "fastResponse": {
+      "title": "Tiempos de Respuesta Rápidos",
+      "description": "Movilización rápida y respuesta inmediata en sitio"
+    },
+    "certifiedTechnicians": {
+      "title": "Técnicos Certificados",
+      "description": "Expertos en mantenimiento altamente capacitados y certificados"
+    },
+    "cuttingEdgeTools": {
+      "title": "Herramientas de Vanguardia y Drones",
+      "description": "Equipos de diagnóstico avanzados y tecnología de drones"
+    },
+    "comprehensiveReports": {
+      "title": "Informes Integrales",
+      "description": "Informes de mantenimiento detallados y recomendaciones"
+    },
+    "safetyFirst": {
+      "title": "Seguridad Primero",
+      "description": "Adhesión estricta a protocolos y estándares de seguridad"
+    }
+  },
+  "teamSafety": {
+    "ourTeam": "Nuestro Equipo",
+    "title": "Seguridad Primero, Trabajo en Equipo Siempre",
+    "description": "Nuestros técnicos certificados trabajan como un equipo unificado, priorizando protocolos de seguridad y aprovechando la experiencia colectiva para entregar servicios excepcionales de mantenimiento de aerogeneradores.",
+    "accidents": "Accidentes",
+    "teamMembers": "Miembros del Equipo",
+    "safetyRecord": "Récord de Seguridad",
+    "safetyCertified": "Certificado de Seguridad",
+    "professionalTeam": "Equipo Profesional",
+    "safetyFirstProtocol": "Protocolo Seguridad Primero",
+    "safetyFirstDescription": "Cada miembro del equipo está equipado con equipo de seguridad avanzado y sigue protocolos estrictos. Nuestro récord de cero accidentes habla de nuestro compromiso inquebrantable con la seguridad de los trabajadores.",
+    "safetyProtocol": {
+      "title": "Protocolo Seguridad Primero",
+      "description": "Cada miembro del equipo está equipado con equipo de seguridad avanzado y sigue protocolos estrictos. Nuestro récord de cero accidentes habla de nuestro compromiso inquebrantable con la seguridad de los trabajadores."
+    },
+    "teamCollaboration": "Colaboración en Equipo",
+    "teamCollaborationDescription": "Nuestros técnicos trabajan en equipos coordinados, combinando experiencia individual con resolución colectiva de problemas para asegurar operaciones de mantenimiento eficientes y exhaustivas.",
+    "professionalEquipment": "Equipo Profesional", 
+    "professionalEquipmentDescription": "Herramientas y equipos de seguridad de última generación aseguran que nuestro equipo pueda manejar cualquier desafío de mantenimiento manteniendo los más altos estándares de seguridad.",
+    "continuousTraining": "Entrenamiento Continuo",
+    "continuousTrainingDescription": "Sesiones de entrenamiento regulares y certificaciones mantienen a nuestro equipo actualizado con los últimos protocolos de seguridad y técnicas de mantenimiento en la industria eólica."
+  },
+  "expertise": {
+    "ourExpertise": "Nuestra Experiencia",
+    "title": "Excelencia en Acción",
+    "subtitle": "Nuestra Experiencia",
+    "description": "Observe a nuestros técnicos certificados realizar mantenimiento de precisión en aerogeneradores con equipos de vanguardia y experiencia incomparable.",
+    "advancedSafety": {
+      "title": "Protocolos de Seguridad Avanzados",
+      "description": "Cada operación de mantenimiento sigue estándares de seguridad estrictos con equipos especializados y procedimientos certificados."
+    },
+    "precisionMaintenance": {
+      "title": "Mantenimiento de Precisión",
+      "description": "Nuestros técnicos utilizan herramientas y técnicas de última generación para asegurar el rendimiento óptimo y longevidad de las turbinas."
+    },
+    "detailedDocumentation": {
+      "title": "Documentación Detallada",
+      "description": "Informes de mantenimiento completos y recomendaciones aseguran transparencia y planificación futura."
+    },
+    "uptimeRate": "Tasa de Disponibilidad",
+    "responseTime": "Tiempo de Respuesta",
+    "certifiedProfessional": "Profesional Certificado"
+  },
+  "emergency": {
+    "emergencyResponse": "Respuesta de Emergencia",
+    "title": "Mantenimiento Crítico",
+    "subtitle": "Bajo Condiciones Extremas",
+    "description": "Cuando las condiciones climáticas son adversas y las turbinas enfrentan problemas críticos, nuestros técnicos expertos están listos para responder. Protocolos de seguridad, equipo profesional y años de experiencia aseguran mantenimiento exitoso incluso en los ambientes más desafiantes.",
+    "emergencyResponseCard": "Respuesta de Emergencia",
+    "emergencyResponseDescription": "Mantenimiento de emergencia 24/7 con tiempos de respuesta rápidos para reparaciones urgentes en condiciones adversas.",
+    "safetyProtocols": "Protocolos de Seguridad",
+    "safetyProtocolsDescription": "Sistemas de arnés profesionales y monitoreo del clima para operaciones de seguridad en alturas extremas.",
+    "precisionMaintenance": "Mantenimiento de Precisión",
+    "precisionMaintenanceDescription": "Herramientas de diagnóstico de alta resolución asegurando control de calidad e informes detallados para todas las operaciones.",
+    "documentation": "Documentación",
+    "documentationDescription": "Fotografía profesional documentando protocolos de seguridad y excelencia en mantenimiento en condiciones extremas.",
+    "safetySecured": "SEGURIDAD ASEGURADA",
+    "highResolution": "ALTA RESOLUCIÓN"
+  },
+  "contact": {
+    "contactUs": "Contáctenos",
+    "title": "Póngase en Contacto",
+    "subtitle": "Contáctenos",
+    "description": "¿Listo para optimizar el rendimiento de sus aerogeneradores? Contáctenos hoy para una consulta o servicio de emergencia.",
+    "phone": "Teléfono",
+    "email": "Email",
+    "location": "Ubicación",
+    "tangierMorocco": "Tánger, Marruecos",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Su Nombre",
+      "email": "Email",
+      "emailPlaceholder": "su@email.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿Cómo podemos ayudarle?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntenos sobre su proyecto...",
+      "sendMessage": "Enviar Mensaje"
+    }
+  },
+  "footer": {
+    "subtitle": "Mantenimiento de Aerogeneradores",
+    "copyright": "© 2025 STM Services. Todos los derechos reservados.",
+    "tagline": "Servicios Profesionales de Aerogeneradores",
+    "allRightsReserved": "Todos los derechos reservados.",
+    "poweringSustainable": "Impulsando soluciones de energía sostenible en Marruecos"
+  }
+}

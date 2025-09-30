@@ -1,0 +1,180 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "advantages": "Avantages",
+    "team": "Équipe",
+    "contact": "Contact",
+    "teamExcellence": "Excellence de l'Équipe",
+    "discoverExpertise": "Découvrez notre expertise",
+    "ourTeam": "Notre Équipe",
+    "safetyFirst": "Sécurité d'abord, travail d'équipe toujours",
+    "ourExpertise": "Notre Expertise",
+    "technicalExcellence": "Excellence technique en action",
+    "emergencyResponse": "Intervention d'Urgence",
+    "criticalMaintenance": "Maintenance critique 24h/24"
+  },
+  "hero": {
+    "title": "STM Services",
+    "subtitle": "Maintenance d'Éoliennes",
+    "description": "Services professionnels de maintenance et de réparation d'éoliennes à Tanger. Garantir une performance optimale et la longévité de vos actifs d'énergie renouvelable.",
+    "ourServices": "Nos Services",
+    "getQuote": "Obtenir un Devis",
+    "expertTechnicians": "Techniciens Experts au Travail",
+    "certifiedProfessionalsDescription": "Nos professionnels certifiés garantissent les plus hauts standards de maintenance et de sécurité des éoliennes.",
+    "professionalService": "Service Professionnel",
+    "service247": "24h/24",
+    "service": "Service",
+    "reliable100": "100%",
+    "reliable": "Fiable"
+  },
+  "about": {
+    "title": "À propos de STM Services",
+    "description1": "Situé au cœur de Tanger, STM Services est votre partenaire de confiance pour la maintenance et la réparation d'éoliennes. Avec des années d'expérience dans le secteur des énergies renouvelables, nous fournissons des solutions complètes pour maintenir vos systèmes d'énergie éolienne en fonctionnement optimal.",
+    "description2": "Notre équipe de techniciens certifiés combine expertise technique et engagement envers la sécurité et l'excellence. Nous comprenons l'importance critique de maintenir l'infrastructure d'énergie renouvelable et travaillons sans relâche pour minimiser les temps d'arrêt tout en maximisant l'efficacité.",
+    "emergencySupport": "Support d'Urgence",
+    "turbinesServiced": "Éoliennes Entretenues",
+    "yearsExperience": "Années d'Expérience",
+    "safetyRecord": "Dossier de Sécurité",
+    "expertTechnicians": "Techniciens Experts au Travail",
+    "certifiedProfessionals": "Nos professionnels certifiés garantissent les plus hauts standards de maintenance et de sécurité des éoliennes."
+  },
+  "services": {
+    "ourExpertise": "Notre Expertise",
+    "title": "Nos Services",
+    "subtitle": "Notre Expertise",
+    "description": "Solutions complètes de maintenance d'éoliennes pour maintenir vos systèmes d'énergie renouvelable en fonctionnement optimal",
+    "preventiveMaintenance": {
+      "title": "Maintenance Préventive",
+      "description": "Inspections régulières et maintenance pour prévenir les pannes coûteuses et prolonger la durée de vie des éoliennes."
+    },
+    "emergencyRepairs": {
+      "title": "Réparations d'Urgence",
+      "description": "Services de réparation d'urgence 24h/24 pour minimiser les temps d'arrêt et restaurer rapidement les opérations."
+    },
+    "componentReplacement": {
+      "title": "Remplacement de Composants",
+      "description": "Remplacement professionnel des composants d'éoliennes avec des pièces de haute qualité et une installation experte."
+    },
+    "performanceOptimization": {
+      "title": "Optimisation des Performances",
+      "description": "Diagnostics avancés et optimisation pour maximiser la production d'énergie et l'efficacité."
+    },
+    "safetyInspections": {
+      "title": "Inspections de Sécurité",
+      "description": "Évaluations de sécurité complètes pour assurer la conformité aux normes et réglementations de l'industrie."
+    },
+    "technicalConsultancy": {
+      "title": "Conseil Technique",
+      "description": "Conseils d'experts sur les mises à niveau d'éoliennes, les stratégies de maintenance et les améliorations opérationnelles."
+    }
+  },
+  "advantages": {
+    "ourAdvantages": "Nos Avantages",
+    "title": "Pourquoi Nous Choisir",
+    "subtitle": "Nos Avantages",
+    "description": "Nos avantages concurrentiels qui font de nous le choix préféré pour la maintenance d'éoliennes à Tanger",
+    "fastResponse": {
+      "title": "Temps de Réponse Rapides",
+      "description": "Mobilisation rapide et intervention sur site immédiate"
+    },
+    "certifiedTechnicians": {
+      "title": "Techniciens Certifiés",
+      "description": "Experts en maintenance hautement formés et certifiés"
+    },
+    "cuttingEdgeTools": {
+      "title": "Outils de Pointe et Drones",
+      "description": "Équipement de diagnostic avancé et technologie de drones"
+    },
+    "comprehensiveReports": {
+      "title": "Rapports Complets",
+      "description": "Rapports de maintenance détaillés et recommandations"
+    },
+    "safetyFirst": {
+      "title": "Sécurité d'Abord",
+      "description": "Respect strict des protocoles et normes de sécurité"
+    }
+  },
+  "teamSafety": {
+    "ourTeam": "Notre Équipe",
+    "title": "Sécurité d'Abord, Travail d'Équipe Toujours",
+    "description": "Nos techniciens certifiés travaillent en équipe unifiée, priorisant les protocoles de sécurité et tirant parti de l'expertise collective pour fournir des services exceptionnels de maintenance d'éoliennes.",
+    "accidents": "Accidents",
+    "teamMembers": "Membres de l'Équipe",
+    "safetyRecord": "Dossier de Sécurité",
+    "safetyCertified": "Certifié Sécurité",
+    "professionalTeam": "Équipe Professionnelle",
+    "safetyFirstProtocol": "Protocole Sécurité d'Abord",
+    "safetyFirstDescription": "Chaque membre de l'équipe est équipé d'équipements de sécurité avancés et suit des protocoles stricts. Notre dossier zéro accident témoigne de notre engagement inébranlable envers la sécurité des travailleurs.",
+    "teamCollaboration": "Collaboration d'Équipe",
+    "teamCollaborationDescription": "Nos techniciens travaillent en équipes coordonnées, combinant expertise individuelle et résolution collective de problèmes pour assurer des opérations de maintenance efficaces et approfondies.",
+    "professionalEquipment": "Équipement Professionnel",
+    "professionalEquipmentDescription": "Outils et équipements de sécurité de pointe garantissent que notre équipe peut relever tout défi de maintenance tout en maintenant les plus hauts standards de sécurité.",
+    "continuousTraining": "Formation Continue",
+    "continuousTrainingDescription": "Sessions de formation régulières et certifications maintiennent notre équipe à jour avec les derniers protocoles de sécurité et techniques de maintenance dans l'industrie éolienne."
+  },
+  "expertise": {
+    "ourExpertise": "Notre Expertise",
+    "title": "Excellence en Action",
+    "subtitle": "Notre Expertise",
+    "description": "Regardez nos techniciens certifiés effectuer une maintenance de précision sur les éoliennes avec des équipements de pointe et une expertise inégalée.",
+    "advancedSafety": {
+      "title": "Protocoles de Sécurité Avancés",
+      "description": "Chaque opération de maintenance suit des normes de sécurité strictes avec des équipements spécialisés et des procédures certifiées."
+    },
+    "precisionMaintenance": {
+      "title": "Maintenance de Précision",
+      "description": "Nos techniciens utilisent des outils et techniques de pointe pour assurer une performance et longévité optimales des éoliennes."
+    },
+    "detailedDocumentation": {
+      "title": "Documentation Détaillée",
+      "description": "Rapports de maintenance complets et recommandations assurent transparence et planification future."
+    },
+    "uptimeRate": "Taux de Disponibilité",
+    "responseTime": "Temps de Réponse",
+    "certifiedProfessional": "Professionnel Certifié"
+  },
+  "emergency": {
+    "emergencyResponse": "Intervention d'Urgence",
+    "title": "Maintenance Critique",
+    "subtitle": "Dans des Conditions Extrêmes",
+    "description": "Lorsque les conditions météorologiques sont difficiles et que les éoliennes font face à des problèmes critiques, nos techniciens experts sont prêts à intervenir. Protocoles de sécurité, équipement professionnel et années d'expérience garantissent une maintenance réussie même dans les environnements les plus difficiles.",
+    "emergencyResponseCard": "Intervention d'Urgence",
+    "emergencyResponseDescription": "Maintenance d'urgence 24h/24 avec temps de réponse rapides pour réparations urgentes dans des conditions défavorables.",
+    "safetyProtocols": "Protocoles de Sécurité",
+    "safetyProtocolsDescription": "Systèmes de harnais professionnels et surveillance météorologique pour opérations de sécurité en hauteur extrême.",
+    "precisionMaintenance": "Maintenance de Précision",
+    "precisionMaintenanceDescription": "Outils de diagnostic haute résolution assurant contrôle qualité et rapports détaillés pour toutes les opérations.",
+    "documentation": "Documentation",
+    "documentationDescription": "Photographie professionnelle documentant les protocoles de sécurité et l'excellence de maintenance dans des conditions extrêmes.",
+    "safetySecured": "SÉCURITÉ ASSURÉE",
+    "highResolution": "HAUTE RÉSOLUTION"
+  },
+  "contact": {
+    "contactUs": "Contactez-Nous",
+    "title": "Entrez en Contact",
+    "subtitle": "Contact",
+    "description": "Prêt à optimiser les performances de vos éoliennes ? Contactez-nous aujourd'hui pour une consultation ou un service d'urgence.",
+    "phone": "Téléphone",
+    "email": "Email",
+    "location": "Localisation",
+    "tangierMorocco": "Tanger, Maroc",
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Votre Nom",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Comment pouvons-nous vous aider ?",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de votre projet...",
+      "sendMessage": "Envoyer le Message"
+    }
+  },
+  "footer": {
+    "subtitle": "Maintenance d'Éoliennes",
+    "copyright": "© 2025 STM Services. Tous droits réservés.",
+    "tagline": "Alimenter les solutions d'énergie durable au Maroc"
+  }
+}

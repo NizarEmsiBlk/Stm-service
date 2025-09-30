@@ -1,7 +1,10 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Image from "next/image";
+import LanguageSwitcher from "../components/LanguageSwitcher";
+import { useLanguagePersistence } from "../hooks/useLanguagePersistence";
 import { 
   ChevronDownIcon, 
   PhoneIcon, 
@@ -15,6 +18,10 @@ import {
 } from '@heroicons/react/24/outline';
 
 export default function Home() {
+  const { t } = useTranslation();
+  
+  // Use the language persistence hook
+  useLanguagePersistence();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isTeamDropdownOpen, setIsTeamDropdownOpen] = useState(false);
 
@@ -54,15 +61,15 @@ export default function Home() {
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-white/80 backdrop-blur-xl shadow-2xl border-b border-white/20' 
+          ? 'bg-white/90 backdrop-blur-xl shadow-2xl border-b border-white/20' 
           : 'bg-transparent'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-6">
+          <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-4">
               <div className="relative">
                 <Image
-                  src="/logo.png"
+                  src="/logo2.png"
                   alt="STM Services Logo"
                   width={55}
                   height={55}
@@ -72,82 +79,186 @@ export default function Home() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-800 to-indigo-900 bg-clip-text text-transparent">STM Services</h1>
-                <p className="text-sm bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent font-medium">Wind Turbine Maintenance Tangier</p>
+                <p className="text-sm bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent font-medium">Wind Turbine Maintenance </p>
               </div>
             </div>
-            <div className="hidden md:flex space-x-1 items-center">
-              <button onClick={() => scrollToSection('home')} className="px-4 py-2 rounded-xl text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 font-medium">Home</button>
-              <button onClick={() => scrollToSection('about')} className="px-4 py-2 rounded-xl text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 font-medium">About</button>
-              <button onClick={() => scrollToSection('services')} className="px-4 py-2 rounded-xl text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 font-medium">Services</button>
-              <button onClick={() => scrollToSection('advantages')} className="px-4 py-2 rounded-xl text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 font-medium">Advantages</button>
+            <div className="hidden md:flex items-center space-x-2">
+              {/* Home Button */}
+              <button 
+                onClick={() => scrollToSection('home')} 
+                className="group relative px-5 py-3 rounded-xl text-gray-700 hover:text-white transition-all duration-500 font-semibold overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-xl"></div>
+                <div className="relative flex items-center space-x-2">
+                  <svg className="w-4 h-4 transform group-hover:rotate-12 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                  </svg>
+                  <span>{t('nav.home')}</span>
+                </div>
+              </button>
+
+              {/* About Button */}
+              <button 
+                onClick={() => scrollToSection('about')} 
+                className="group relative px-5 py-3 rounded-xl text-gray-700 hover:text-white transition-all duration-500 font-semibold overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-teal-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-xl"></div>
+                <div className="relative flex items-center space-x-2">
+                  <svg className="w-4 h-4 transform group-hover:rotate-12 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
+                  </svg>
+                  <span>{t('nav.about')}</span>
+                </div>
+              </button>
+
+              {/* Services Button */}
+              <button 
+                onClick={() => scrollToSection('services')} 
+                className="group relative px-5 py-3 rounded-xl text-gray-700 hover:text-white transition-all duration-500 font-semibold overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-xl"></div>
+                <div className="relative flex items-center space-x-2">
+                  <svg className="w-4 h-4 transform group-hover:rotate-12 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd"/>
+                  </svg>
+                  <span>{t('nav.services')}</span>
+                </div>
+              </button>
+
+              {/* Advantages Button */}
+              <button 
+                onClick={() => scrollToSection('advantages')} 
+                className="group relative px-5 py-3 rounded-xl text-gray-700 hover:text-white transition-all duration-500 font-semibold overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-xl"></div>
+                <div className="relative flex items-center space-x-2">
+                  <svg className="w-4 h-4 transform group-hover:rotate-12 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"/>
+                  </svg>
+                  <span>{t('nav.advantages')}</span>
+                </div>
+              </button>
               
-              {/* Team Dropdown Menu */}
+              {/* Enhanced Team Dropdown Menu */}
               <div className="relative team-dropdown">
                 <button 
                   onClick={() => setIsTeamDropdownOpen(!isTeamDropdownOpen)}
-                  className="flex items-center space-x-1 px-4 py-2 rounded-xl text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 font-medium"
+                  className="group relative px-5 py-3 rounded-xl text-gray-700 hover:text-white transition-all duration-500 font-semibold overflow-hidden"
                 >
-                  <span>Team</span>
-                  <ChevronDownIcon className={`w-4 h-4 transition-transform duration-300 ${isTeamDropdownOpen ? 'rotate-180' : ''}`} />
+                  <div className={`absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 transform transition-transform duration-500 origin-left rounded-xl ${isTeamDropdownOpen ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></div>
+                  <div className="relative flex items-center space-x-2">
+                    <svg className="w-4 h-4 transform group-hover:rotate-12 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                    </svg>
+                    <span>{t('nav.team')}</span>
+                    <ChevronDownIcon className={`w-4 h-4 transition-transform duration-500 ${isTeamDropdownOpen ? 'rotate-180' : ''}`} />
+                  </div>
                 </button>
                 
-                {/* Dropdown Menu */}
+                {/* Enhanced Dropdown Menu */}
                 {isTeamDropdownOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-56 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-blue-100/50 py-2 z-50 animate-fade-in-up">
-                    <div className="px-3 py-2 text-xs font-semibold text-blue-600 uppercase tracking-wider border-b border-blue-100/50 mb-2">
-                      Team Sections
+                  <div className="absolute top-full left-0 mt-3 w-72 bg-white/95 backdrop-blur-2xl rounded-3xl shadow-2xl border border-white/30 py-3 z-50 animate-fade-in-up overflow-hidden">
+                    {/* Animated background gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-purple-50/30 to-cyan-50/50 rounded-3xl"></div>
+                    
+                    {/* Header */}
+                    <div className="relative px-4 py-3 border-b border-gradient-to-r from-blue-200/50 to-purple-200/50 mb-2">
+                      <div className="flex items-center space-x-3">
+                        <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                          <span className="text-white text-sm font-bold">✨</span>
+                        </div>
+                        <div>
+                          <h3 className="text-sm font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">{t('nav.teamExcellence')}</h3>
+                          <p className="text-xs text-gray-500">{t('nav.discoverExpertise')}</p>
+                        </div>
+                      </div>
                     </div>
                     
+                    {/* Enhanced Menu Items */}
                     <button
                       onClick={() => scrollToSection('team-safety')}
-                      className="w-full text-left px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 flex items-center space-x-3 group"
+                      className="relative w-full text-left px-4 py-4 text-gray-700 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50 hover:text-green-700 transition-all duration-400 flex items-center space-x-4 group"
                     >
-                      <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <span className="text-white text-sm font-bold">👥</span>
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-400 shadow-lg">
+                        <span className="text-white text-lg font-bold">👥</span>
                       </div>
-                      <div>
-                        <div className="font-medium">Our Team</div>
-                        <div className="text-xs text-gray-500">Safety first, teamwork always</div>
+                      <div className="flex-1">
+                        <div className="font-bold text-base mb-1">{t('nav.ourTeam')}</div>
+                        <div className="text-xs text-gray-500 leading-relaxed">{t('nav.safetyFirst')}</div>
+                      </div>
+                      <div className="w-6 h-6 rounded-full bg-green-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg className="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"/>
+                        </svg>
                       </div>
                     </button>
                     
                     <button
                       onClick={() => scrollToSection('expertise')}
-                      className="w-full text-left px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 flex items-center space-x-3 group"
+                      className="relative w-full text-left px-4 py-4 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 hover:text-blue-700 transition-all duration-400 flex items-center space-x-4 group"
                     >
-                      <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <span className="text-white text-sm font-bold">⚙️</span>
+                      <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-400 shadow-lg">
+                        <span className="text-white text-lg font-bold">⚙️</span>
                       </div>
-                      <div>
-                        <div className="font-medium">Our Expertise</div>
-                        <div className="text-xs text-gray-500">Technical excellence in action</div>
+                      <div className="flex-1">
+                        <div className="font-bold text-base mb-1">{t('nav.ourExpertise')}</div>
+                        <div className="text-xs text-gray-500 leading-relaxed">{t('nav.technicalExcellence')}</div>
+                      </div>
+                      <div className="w-6 h-6 rounded-full bg-blue-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg className="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"/>
+                        </svg>
                       </div>
                     </button>
                     
                     <button
                       onClick={() => scrollToSection('emergency-response')}
-                      className="w-full text-left px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 flex items-center space-x-3 group"
+                      className="relative w-full text-left px-4 py-4 text-gray-700 hover:bg-gradient-to-r hover:from-red-50 hover:to-orange-50 hover:text-red-700 transition-all duration-400 flex items-center space-x-4 group"
                     >
-                      <div className="w-8 h-8 bg-gradient-to-r from-red-500 to-orange-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <span className="text-white text-sm font-bold">⚡</span>
+                      <div className="w-12 h-12 bg-gradient-to-br from-red-400 to-orange-600 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-400 shadow-lg">
+                        <span className="text-white text-lg font-bold">⚡</span>
                       </div>
-                      <div>
-                        <div className="font-medium">Emergency Response</div>
-                        <div className="text-xs text-gray-500">Critical maintenance 24/7</div>
+                      <div className="flex-1">
+                        <div className="font-bold text-base mb-1">{t('nav.emergencyResponse')}</div>
+                        <div className="text-xs text-gray-500 leading-relaxed">{t('nav.criticalMaintenance')}</div>
+                      </div>
+                      <div className="w-6 h-6 rounded-full bg-red-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg className="w-3 h-3 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"/>
+                        </svg>
                       </div>
                     </button>
+
+                    {/* Bottom decoration */}
+                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 rounded-b-3xl"></div>
                   </div>
                 )}
               </div>
+
+              {/* Contact Button */}
+              <button 
+                onClick={() => scrollToSection('contact')} 
+                className="group relative px-6 py-3 rounded-xl text-white transition-all duration-500 font-bold overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center rounded-xl"></div>
+                <div className="relative flex items-center space-x-2">
+                  <svg className="w-4 h-4 transform group-hover:rotate-12 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                  </svg>
+                  <span>{t('nav.contact')}</span>
+                </div>
+              </button>
               
-              <button onClick={() => scrollToSection('contact')} className="px-4 py-2 rounded-xl text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 font-medium">Contact</button>
+              {/* Language Switcher */}
+              <LanguageSwitcher />
             </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-32 pb-32">
         {/* Modern gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-indigo-500/15 to-blue-800/10"></div>
         
@@ -214,7 +325,7 @@ export default function Home() {
           <div className="text-left lg:text-left order-2 lg:order-1 animate-slide-in-left">
             <div className="relative mb-8 lg:hidden flex justify-center">
               <Image
-                src="/logo.png"
+                src="/logo2.png"
                 alt="STM Services Logo"
                 width={120}
                 height={120}
@@ -224,7 +335,7 @@ export default function Home() {
             
             <div className="hidden lg:block relative mb-8">
               <Image
-                src="/logo.png"
+                src="/logo2.png"
                 alt="STM Services Logo"
                 width={100}
                 height={100}
@@ -233,16 +344,15 @@ export default function Home() {
             </div>
             
             <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-blue-800 via-indigo-700 to-blue-900 bg-clip-text text-transparent mb-6 leading-tight">
-              STM Services
+              {t('hero.title')}
             </h1>
             
             <p className="text-xl lg:text-2xl font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-6">
-              Wind Turbine Maintenance Tangier
+              {t('hero.subtitle')}
             </p>
             
             <p className="text-lg text-gray-600 mb-10 leading-relaxed font-light max-w-lg">
-              Professional wind turbine maintenance and repair services in Tangier. 
-              Ensuring optimal performance and longevity of your renewable energy assets.
+              {t('hero.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
@@ -250,14 +360,14 @@ export default function Home() {
                 onClick={() => scrollToSection('services')}
                 className="group relative bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-blue-600/25"
               >
-                <span className="relative z-10">Our Services</span>
+                <span className="relative z-10">{t('hero.ourServices')}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-2xl blur opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="group relative bg-white/10 backdrop-blur-sm border-2 border-blue-600/50 text-blue-600 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-blue-600 hover:text-white hover:border-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl"
               >
-                <span className="relative z-10">Get Quote</span>
+                <span className="relative z-10">{t('hero.getQuote')}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
             </div>
@@ -323,7 +433,7 @@ export default function Home() {
           <div className="animate-fade-in-up">
             <div className="relative mb-12">
               <Image
-                src="/logo.png"
+                src="/logo2.png"
                 alt="STM Services Logo"
                 width={140}
                 height={140}
@@ -338,13 +448,13 @@ export default function Home() {
             
             <div className="relative mb-10">
               <p className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent animate-slide-in-right">
-                Wind Turbine Maintenance Tangier
+                Wind Turbine Maintenance 
               </p>
               <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full"></div>
             </div>
             
             <p className="text-xl text-gray-600 mb-14 max-w-3xl mx-auto animate-fade-in leading-relaxed font-light">
-              Professional wind turbine maintenance and repair services in Tangier. 
+              Professional wind turbine maintenance and repair services . 
               Ensuring optimal performance and longevity of your renewable energy assets with cutting-edge technology and expert care.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-up">
@@ -388,7 +498,7 @@ export default function Home() {
                 {/* Main image container with modern styling */}
                 <div className="relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-white/10">
                   <Image
-                    src="/technician.png"
+                    src="/about.png"
                     alt="STM Services Technician performing wind turbine maintenance"
                     width={600}
                     height={400}
@@ -405,9 +515,9 @@ export default function Home() {
                   
                   {/* Bottom content overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-2xl font-bold mb-2">Expert Technicians at Work</h3>
+                    <h3 className="text-2xl font-bold mb-2">{t('hero.expertTechnicians')}</h3>
                     <p className="text-blue-100 leading-relaxed">
-                      Our certified professionals ensure the highest standards of wind turbine maintenance and safety.
+                      {t('hero.certifiedProfessionalsDescription')}
                     </p>
                   </div>
                 </div>
@@ -432,23 +542,21 @@ export default function Home() {
               </div>
             </div>
             <div className="animate-slide-in-right">
-              <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">About STM Services</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">{t('about.title')}</h2>
               <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-                Located in the heart of Tangier, STM Services is your trusted partner for wind turbine maintenance and repair. 
-                With years of experience in the renewable energy sector, we provide comprehensive solutions to keep your wind energy systems operating at peak performance.
+                {t('about.description1')}
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Our team of certified technicians combines technical expertise with a commitment to safety and excellence. 
-                We understand the critical importance of maintaining renewable energy infrastructure and work tirelessly to minimize downtime while maximizing efficiency.
+                {t('about.description2')}
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4 bg-white rounded-xl shadow-md">
                   <div className="text-3xl font-bold text-blue-600 mb-2">24/7</div>
-                  <div className="text-gray-600">Emergency Support</div>
+                  <div className="text-gray-600">{t('about.emergencySupport')}</div>
                 </div>
                 <div className="text-center p-4 bg-white rounded-xl shadow-md">
                   <div className="text-3xl font-bold text-blue-600 mb-2">100+</div>
-                  <div className="text-gray-600">Turbines Serviced</div>
+                  <div className="text-gray-600">{t('about.turbinesServiced')}</div>
                 </div>
               </div>
             </div>
@@ -461,11 +569,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 animate-fade-in-up">
             <div className="inline-block mb-4">
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-sm font-semibold tracking-wider uppercase">Our Expertise</span>
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-sm font-semibold tracking-wider uppercase">{t('services.ourExpertise')}</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-800 to-indigo-900 bg-clip-text text-transparent mb-6">Our Services</h2>
+            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-800 to-indigo-900 bg-clip-text text-transparent mb-6">{t('services.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive wind turbine maintenance solutions to keep your renewable energy systems running at peak efficiency
+              {t('services.description')}
             </p>
             <div className="mt-6 w-24 h-1 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full mx-auto"></div>
           </div>
@@ -473,33 +581,33 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Preventive Maintenance",
-                description: "Regular inspections and maintenance to prevent costly breakdowns and extend turbine lifespan.",
+                title: t('services.preventiveMaintenance.title'),
+                description: t('services.preventiveMaintenance.description'),
                 icon: "🔧"
               },
               {
-                title: "Emergency Repairs",
-                description: "24/7 emergency repair services to minimize downtime and restore operations quickly.",
+                title: t('services.emergencyRepairs.title'),
+                description: t('services.emergencyRepairs.description'),
                 icon: "⚡"
               },
               {
-                title: "Component Replacement",
-                description: "Professional replacement of turbine components with high-quality parts and expert installation.",
+                title: t('services.componentReplacement.title'),
+                description: t('services.componentReplacement.description'),
                 icon: "🔄"
               },
               {
-                title: "Performance Optimization",
-                description: "Advanced diagnostics and optimization to maximize energy output and efficiency.",
+                title: t('services.performanceOptimization.title'),
+                description: t('services.performanceOptimization.description'),
                 icon: "📊"
               },
               {
-                title: "Safety Inspections",
-                description: "Comprehensive safety assessments to ensure compliance with industry standards and regulations.",
+                title: t('services.safetyInspections.title'),
+                description: t('services.safetyInspections.description'),
                 icon: "🛡️"
               },
               {
-                title: "Technical Consultancy",
-                description: "Expert advice on turbine upgrades, maintenance strategies, and operational improvements.",
+                title: t('services.technicalConsultancy.title'),
+                description: t('services.technicalConsultancy.description'),
                 icon: "💡"
               }
             ].map((service, index) => (
@@ -544,14 +652,14 @@ export default function Home() {
           <div className="text-center mb-20 animate-fade-in-up">
             <div className="inline-block mb-6">
               <span className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-full text-sm font-bold tracking-wider uppercase shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                Our Advantages
+                {t('advantages.ourAdvantages')}
               </span>
             </div>
             <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-800 to-indigo-900 bg-clip-text text-transparent mb-6">
-              Why Choose Us
+              {t('advantages.title')}
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Our competitive advantages that make us the preferred choice for wind turbine maintenance in Tangier
+              {t('advantages.description')}
             </p>
             <div className="mt-8 w-32 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mx-auto animate-pulse"></div>
           </div>
@@ -559,29 +667,29 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {[
               {
-                title: "Fast Response Times",
+                title: t('advantages.fastResponse.title'),
                 icon: <ClockIcon className="w-12 h-12" />,
-                description: "Quick mobilization and rapid on-site response"
+                description: t('advantages.fastResponse.description')
               },
               {
-                title: "Certified Technicians",
+                title: t('advantages.certifiedTechnicians.title'),
                 icon: <AcademicCapIcon className="w-12 h-12" />,
-                description: "Highly trained and certified maintenance experts"
+                description: t('advantages.certifiedTechnicians.description')
               },
               {
-                title: "Cutting-edge Tools & Drones",
+                title: t('advantages.cuttingEdgeTools.title'),
                 icon: <CubeIcon className="w-12 h-12" />,
-                description: "Advanced diagnostic equipment and drone technology"
+                description: t('advantages.cuttingEdgeTools.description')
               },
               {
-                title: "Comprehensive Reports",
+                title: t('advantages.comprehensiveReports.title'),
                 icon: <DocumentTextIcon className="w-12 h-12" />,
-                description: "Detailed maintenance reports and recommendations"
+                description: t('advantages.comprehensiveReports.description')
               },
               {
-                title: "Safety First",
+                title: t('advantages.safetyFirst.title'),
                 icon: <ShieldCheckIcon className="w-12 h-12" />,
-                description: "Strict adherence to safety protocols and standards"
+                description: t('advantages.safetyFirst.description')
               }
             ].map((advantage, index) => (
               <div 
@@ -643,13 +751,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 animate-fade-in-up">
             <div className="inline-block mb-4">
-              <span className="bg-blue-500/20 backdrop-blur-sm text-blue-200 px-6 py-3 rounded-full text-sm font-semibold tracking-wider uppercase border border-blue-400/30">Our Team</span>
+              <span className="bg-blue-500/20 backdrop-blur-sm text-blue-200 px-6 py-3 rounded-full text-sm font-semibold tracking-wider uppercase border border-blue-400/30">{t('teamSafety.ourTeam')}</span>
             </div>
             <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Safety First, Teamwork Always
+              {t('teamSafety.title')}
             </h2>
             <p className="text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
-              Our certified technicians work as a unified team, prioritizing safety protocols and leveraging collective expertise to deliver exceptional wind turbine maintenance services.
+              {t('teamSafety.description')}
             </p>
           </div>
 
@@ -675,13 +783,13 @@ export default function Home() {
                     <div className="absolute top-4 right-4 bg-green-500/90 backdrop-blur-sm text-white px-4 py-2 rounded-full shadow-lg">
                       <span className="text-sm font-bold flex items-center gap-2">
                         <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-                        Safety Certified
+                        {t('teamSafety.safetyCertified')}
                       </span>
                     </div>
                     
                     {/* Team size indicator */}
                     <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm text-blue-900 px-4 py-2 rounded-full shadow-lg">
-                      <span className="text-sm font-bold">Professional Team</span>
+                      <span className="text-sm font-bold">{t('teamSafety.professionalTeam')}</span>
                     </div>
                   </div>
                 </div>
@@ -690,21 +798,21 @@ export default function Home() {
                 <div className="absolute -top-6 -left-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-blue-100">
                   <div className="text-center">
                     <div className="text-2xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-1">0</div>
-                    <div className="text-xs text-gray-600 font-medium">Accidents</div>
+                    <div className="text-xs text-gray-600 font-medium">{t('teamSafety.accidents')}</div>
                   </div>
                 </div>
                 
                 <div className="absolute -bottom-6 -right-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-blue-100">
                   <div className="text-center">
                     <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-1">15+</div>
-                    <div className="text-xs text-gray-600 font-medium">Team Members</div>
+                    <div className="text-xs text-gray-600 font-medium">{t('teamSafety.teamMembers')}</div>
                   </div>
                 </div>
                 
                 <div className="absolute top-1/2 -right-8 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-blue-100 transform -translate-y-1/2">
                   <div className="text-center">
                     <div className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-1">100%</div>
-                    <div className="text-xs text-gray-600 font-medium">Safety Record</div>
+                    <div className="text-xs text-gray-600 font-medium">{t('teamSafety.safetyRecord')}</div>
                   </div>
                 </div>
                 
@@ -722,9 +830,9 @@ export default function Home() {
                     <span className="text-white text-2xl">🛡️</span>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-white mb-3">Safety First Protocol</h3>
+                    <h3 className="text-2xl font-bold text-white mb-3">{t('teamSafety.safetyFirstProtocol')}</h3>
                     <p className="text-blue-100 leading-relaxed">
-                      Every team member is equipped with advanced safety gear and follows strict protocols. Our zero-accident record speaks to our unwavering commitment to worker safety.
+                      {t('teamSafety.safetyFirstDescription')}
                     </p>
                   </div>
                 </div>
@@ -735,9 +843,9 @@ export default function Home() {
                     <span className="text-white text-2xl">🤝</span>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-white mb-3">Team Collaboration</h3>
+                    <h3 className="text-2xl font-bold text-white mb-3">{t('teamSafety.teamCollaboration')}</h3>
                     <p className="text-blue-100 leading-relaxed">
-                      Our technicians work in coordinated teams, combining individual expertise with collective problem-solving to ensure efficient and thorough maintenance operations.
+                      {t('teamSafety.teamCollaborationDescription')}
                     </p>
                   </div>
                 </div>
@@ -748,9 +856,9 @@ export default function Home() {
                     <span className="text-white text-2xl">⚙️</span>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-white mb-3">Professional Equipment</h3>
+                    <h3 className="text-2xl font-bold text-white mb-3">{t('teamSafety.professionalEquipment')}</h3>
                     <p className="text-blue-100 leading-relaxed">
-                      State-of-the-art tools and safety equipment ensure our team can handle any maintenance challenge while maintaining the highest safety standards.
+                      {t('teamSafety.professionalEquipmentDescription')}
                     </p>
                   </div>
                 </div>
@@ -761,9 +869,9 @@ export default function Home() {
                     <span className="text-white text-2xl">📚</span>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-white mb-3">Continuous Training</h3>
+                    <h3 className="text-2xl font-bold text-white mb-3">{t('teamSafety.continuousTraining')}</h3>
                     <p className="text-blue-100 leading-relaxed">
-                      Regular training sessions and certifications keep our team updated with the latest safety protocols and maintenance techniques in the wind energy industry.
+                      {t('teamSafety.continuousTrainingDescription')}
                     </p>
                   </div>
                 </div>
@@ -784,13 +892,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 animate-fade-in-up">
             <div className="inline-block mb-4">
-              <span className="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold tracking-wider uppercase">Our Expertise</span>
+              <span className="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold tracking-wider uppercase">{t('expertise.ourExpertise')}</span>
             </div>
             <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-800 to-indigo-900 bg-clip-text text-transparent mb-6">
-              Excellence in Action
+              {t('expertise.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Watch our certified technicians perform precision maintenance on wind turbines with cutting-edge equipment and unmatched expertise.
+              {t('expertise.description')}
             </p>
           </div>
 
@@ -832,15 +940,15 @@ export default function Home() {
 
             {/* Right side - Technician image */}
             <div className="animate-slide-in-right">
-              <div className="relative group">
+              <div className="relative group max-w-sm mx-auto">
                 {/* Main image with modern frame */}
-                <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-50 to-indigo-50 p-2">
+                <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-50 to-indigo-50 p-2 w-fit mx-auto">
                   <div className="overflow-hidden rounded-2xl">
                     <Image
                       src="/technician.png"
                       alt="Professional technician performing wind turbine maintenance"
-                      width={600}
-                      height={700}
+                      width={200}
+                      height={200}
                       className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
                     />
                   </div>
@@ -884,16 +992,15 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <span className="bg-red-500/20 backdrop-blur-sm text-red-200 px-6 py-3 rounded-full text-sm font-semibold tracking-wider uppercase border border-red-400/30">Emergency Response</span>
+            <span className="bg-red-500/20 backdrop-blur-sm text-red-200 px-6 py-3 rounded-full text-sm font-semibold tracking-wider uppercase border border-red-400/30">{t('emergency.emergencyResponse')}</span>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 mt-6">
-              Critical Maintenance
+              {t('emergency.title')}
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-600">
-                Under Extreme Conditions
+                {t('emergency.subtitle')}
               </span>
             </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              When weather conditions are harsh and turbines face critical issues, our expert technicians are ready to respond. 
-              Safety protocols, professional equipment, and years of experience ensure successful maintenance even in the most challenging environments.
+              {t('emergency.description')}
             </p>
           </div>
 
@@ -909,9 +1016,9 @@ export default function Home() {
                     <span className="text-white text-3xl">⚡</span>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-200 transition-colors duration-300">Emergency Response</h3>
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-200 transition-colors duration-300">{t('emergency.emergencyResponseCard')}</h3>
                     <p className="text-slate-300 text-sm leading-relaxed group-hover:text-slate-200 transition-colors duration-300">
-                      24/7 emergency maintenance with rapid response times for urgent repairs in adverse conditions.
+                      {t('emergency.emergencyResponseDescription')}
                     </p>
                   </div>
                 </div>
@@ -924,9 +1031,9 @@ export default function Home() {
                     <span className="text-white text-3xl">🔒</span>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-200 transition-colors duration-300">Safety Protocols</h3>
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-200 transition-colors duration-300">{t('emergency.safetyProtocols')}</h3>
                     <p className="text-slate-300 text-sm leading-relaxed group-hover:text-slate-200 transition-colors duration-300">
-                      Professional harness systems and weather monitoring for extreme height safety operations.
+                      {t('emergency.safetyProtocolsDescription')}
                     </p>
                   </div>
                 </div>
@@ -963,11 +1070,11 @@ export default function Home() {
                     <div className="flex items-center space-x-3">
                       <div className="flex items-center space-x-2 bg-slate-900/80 backdrop-blur-sm rounded-full px-3 py-2 border border-slate-700/50">
                         <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                        <span className="text-green-400 text-xs font-semibold">SAFETY SECURED</span>
+                        <span className="text-green-400 text-xs font-semibold">{t('emergency.safetySecured')}</span>
                       </div>
                       <div className="flex items-center space-x-2 bg-slate-900/80 backdrop-blur-sm rounded-full px-3 py-2 border border-slate-700/50">
                         <div className="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></div>
-                        <span className="text-orange-400 text-xs font-semibold">HIGH RESOLUTION</span>
+                        <span className="text-orange-400 text-xs font-semibold">{t('emergency.highResolution')}</span>
                       </div>
                     </div>
                   </div>
@@ -988,9 +1095,9 @@ export default function Home() {
                     <span className="text-white text-3xl">🎯</span>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-200 transition-colors duration-300">Precision Maintenance</h3>
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-200 transition-colors duration-300">{t('emergency.precisionMaintenance')}</h3>
                     <p className="text-slate-300 text-sm leading-relaxed group-hover:text-slate-200 transition-colors duration-300">
-                      High-resolution diagnostic tools ensuring quality control and detailed reporting for all operations.
+                      {t('emergency.precisionMaintenanceDescription')}
                     </p>
                   </div>
                 </div>
@@ -1003,9 +1110,9 @@ export default function Home() {
                     <span className="text-white text-3xl">📸</span>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-100 transition-colors duration-300">Documentation</h3>
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-100 transition-colors duration-300">{t('emergency.documentation')}</h3>
                     <p className="text-red-100 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
-                      Professional photography documenting safety protocols and maintenance excellence in extreme conditions.
+                      {t('emergency.documentationDescription')}
                     </p>
                   </div>
                 </div>
@@ -1026,11 +1133,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
             <div className="inline-block mb-4">
-              <span className="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold tracking-wider uppercase">Contact Us</span>
+              <span className="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold tracking-wider uppercase">{t('contact.contactUs')}</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-800 to-indigo-900 bg-clip-text text-transparent mb-6">Get In Touch</h2>
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-800 to-indigo-900 bg-clip-text text-transparent mb-6">{t('contact.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ready to optimize your wind turbine performance? Contact us today for a consultation or emergency service.
+              {t('contact.description')}
             </p>
           </div>
           
@@ -1042,7 +1149,7 @@ export default function Home() {
                     <PhoneIcon className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold">Phone</h3>
+                    <h3 className="text-xl font-semibold">{t('contact.phone')}</h3>
                     <p className="text-gray-600">+(212) 539 32 41 71</p>
                   </div>
                 </div>
@@ -1052,7 +1159,7 @@ export default function Home() {
                     <EnvelopeIcon className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold">Email</h3>
+                    <h3 className="text-xl font-semibold">{t('contact.email')}</h3>
                     <p className="text-gray-600">info@stmservices.ma</p>
                   </div>
                 </div>
@@ -1062,7 +1169,7 @@ export default function Home() {
                     <MapPinIcon className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold">Location</h3>
+                    <h3 className="text-xl font-semibold">{t('contact.location')}</h3>
                     <p className="text-gray-600">Tangier, Morocco</p>
                   </div>
                 </div>
@@ -1073,43 +1180,43 @@ export default function Home() {
               <form className="bg-white p-8 rounded-2xl shadow-2xl">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label className="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                    <label className="block text-gray-700 text-sm font-bold mb-2">{t('contact.form.name')}</label>
                     <input 
                       type="text" 
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition-colors"
-                      placeholder="Your Name"
+                      placeholder={t('contact.form.namePlaceholder')}
                     />
                   </div>
                   <div>
-                    <label className="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                    <label className="block text-gray-700 text-sm font-bold mb-2">{t('contact.form.email')}</label>
                     <input 
                       type="email" 
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition-colors"
-                      placeholder="your@email.com"
+                      placeholder={t('contact.form.emailPlaceholder')}
                     />
                   </div>
                 </div>
                 <div className="mb-6">
-                  <label className="block text-gray-700 text-sm font-bold mb-2">Subject</label>
+                  <label className="block text-gray-700 text-sm font-bold mb-2">{t('contact.form.subject')}</label>
                   <input 
                     type="text" 
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition-colors"
-                    placeholder="How can we help?"
+                    placeholder={t('contact.form.subjectPlaceholder')}
                   />
                 </div>
                 <div className="mb-6">
-                  <label className="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                  <label className="block text-gray-700 text-sm font-bold mb-2">{t('contact.form.message')}</label>
                   <textarea 
                     rows={4}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition-colors resize-none"
-                    placeholder="Tell us about your project..."
+                    placeholder={t('contact.form.messagePlaceholder')}
                   ></textarea>
                 </div>
                 <button 
                   type="submit"
                   className="w-full bg-blue-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
                 >
-                  Send Message
+                  {t('contact.form.sendMessage')}
                 </button>
               </form>
             </div>
@@ -1123,7 +1230,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
               <Image
-                src="/logo.png"
+                src="/logo2.png"
                 alt="STM Services Logo"
                 width={40}
                 height={40}
@@ -1131,12 +1238,12 @@ export default function Home() {
               />
               <div>
                 <h3 className="text-xl font-bold">STM Services</h3>
-                <p className="text-blue-300 text-sm">Wind Turbine Maintenance Tangier</p>
+                <p className="text-blue-300 text-sm">{t('footer.subtitle')}</p>
               </div>
             </div>
             <div className="text-center md:text-right">
-              <p className="text-blue-300 mb-2">© 2024 STM Services. All rights reserved.</p>
-              <p className="text-blue-400 text-sm">Powering sustainable energy solutions in Morocco</p>
+              <p className="text-blue-300 mb-2">{t('footer.copyright')}</p>
+              <p className="text-blue-400 text-sm">{t('footer.tagline')}</p>
             </div>
           </div>
         </div>

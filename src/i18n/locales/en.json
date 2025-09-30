@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "advantages": "Advantages",
+    "team": "Team",
+    "contact": "Contact",
+    "teamExcellence": "Team Excellence",
+    "discoverExpertise": "Discover our expertise",
+    "ourTeam": "Our Team",
+    "safetyFirst": "Safety first, teamwork always",
+    "ourExpertise": "Our Expertise",
+    "technicalExcellence": "Technical excellence in action",
+    "emergencyResponse": "Emergency Response",
+    "criticalMaintenance": "Critical maintenance 24/7"
+  },
+  "hero": {
+    "title": "STM Services",
+    "subtitle": "Wind Turbine Maintenance",
+    "description": "Professional wind turbine maintenance and repair services in Tangier. Ensuring optimal performance and longevity of your renewable energy assets.",
+    "ourServices": "Our Services",
+    "getQuote": "Get Quote",
+    "expertTechnicians": "Expert Technicians at Work",
+    "certifiedProfessionalsDescription": "Our certified professionals ensure the highest standards of wind turbine maintenance and safety.",
+    "professionalService": "Professional Service",
+    "service247": "24/7",
+    "service": "Service",
+    "reliable100": "100%",
+    "reliable": "Reliable"
+  },
+  "about": {
+    "title": "About STM Services",
+    "description1": "Located in the heart of Tangier, STM Services is your trusted partner for wind turbine maintenance and repair. With years of experience in the renewable energy sector, we provide comprehensive solutions to keep your wind energy systems operating at peak performance.",
+    "description2": "Our team of certified technicians combines technical expertise with a commitment to safety and excellence. We understand the critical importance of maintaining renewable energy infrastructure and work tirelessly to minimize downtime while maximizing efficiency.",
+    "emergencySupport": "Emergency Support",
+    "turbinesServiced": "Turbines Serviced",
+    "yearsExperience": "Years Experience",
+    "safetyRecord": "Safety Record",
+    "expertTechnicians": "Expert Technicians at Work",
+    "certifiedProfessionals": "Our certified professionals ensure the highest standards of wind turbine maintenance and safety."
+  },
+  "services": {
+    "ourExpertise": "Our Expertise",
+    "title": "Our Services",
+    "subtitle": "Our Expertise",
+    "description": "Comprehensive wind turbine maintenance solutions to keep your renewable energy systems running at peak efficiency",
+    "preventiveMaintenance": {
+      "title": "Preventive Maintenance",
+      "description": "Regular inspections and maintenance to prevent costly breakdowns and extend turbine lifespan."
+    },
+    "emergencyRepairs": {
+      "title": "Emergency Repairs",
+      "description": "24/7 emergency repair services to minimize downtime and restore operations quickly."
+    },
+    "componentReplacement": {
+      "title": "Component Replacement",
+      "description": "Professional replacement of turbine components with high-quality parts and expert installation."
+    },
+    "performanceOptimization": {
+      "title": "Performance Optimization",
+      "description": "Advanced diagnostics and optimization to maximize energy output and efficiency."
+    },
+    "safetyInspections": {
+      "title": "Safety Inspections",
+      "description": "Comprehensive safety assessments to ensure compliance with industry standards and regulations."
+    },
+    "technicalConsultancy": {
+      "title": "Technical Consultancy",
+      "description": "Expert advice on turbine upgrades, maintenance strategies, and operational improvements."
+    }
+  },
+  "advantages": {
+    "ourAdvantages": "Our Advantages",
+    "title": "Why Choose Us",
+    "subtitle": "Our Advantages",
+    "description": "Our competitive advantages that make us the preferred choice for wind turbine maintenance in Tangier",
+    "fastResponse": {
+      "title": "Fast Response Times",
+      "description": "Quick mobilization and rapid on-site response"
+    },
+    "certifiedTechnicians": {
+      "title": "Certified Technicians",
+      "description": "Highly trained and certified maintenance experts"
+    },
+    "cuttingEdgeTools": {
+      "title": "Cutting-edge Tools & Drones",
+      "description": "Advanced diagnostic equipment and drone technology"
+    },
+    "comprehensiveReports": {
+      "title": "Comprehensive Reports",
+      "description": "Detailed maintenance reports and recommendations"
+    },
+    "safetyFirst": {
+      "title": "Safety First",
+      "description": "Strict adherence to safety protocols and standards"
+    }
+  },
+  "teamSafety": {
+    "ourTeam": "Our Team",
+    "title": "Safety First, Teamwork Always",
+    "description": "Our certified technicians work as a unified team, prioritizing safety protocols and leveraging collective expertise to deliver exceptional wind turbine maintenance services.",
+    "accidents": "Accidents",
+    "teamMembers": "Team Members",
+    "safetyRecord": "Safety Record",
+    "safetyCertified": "Safety Certified",
+    "professionalTeam": "Professional Team",
+    "safetyFirstProtocol": "Safety First Protocol",
+    "safetyFirstDescription": "Every team member is equipped with advanced safety gear and follows strict protocols. Our zero-accident record speaks to our unwavering commitment to worker safety.",
+    "teamCollaboration": "Team Collaboration",
+    "teamCollaborationDescription": "Our technicians work in coordinated teams, combining individual expertise with collective problem-solving to ensure efficient and thorough maintenance operations.",
+    "professionalEquipment": "Professional Equipment",
+    "professionalEquipmentDescription": "State-of-the-art tools and safety equipment ensure our team can handle any maintenance challenge while maintaining the highest safety standards.",
+    "continuousTraining": "Continuous Training",
+    "continuousTrainingDescription": "Regular training sessions and certifications keep our team updated with the latest safety protocols and maintenance techniques in the wind energy industry."
+  },
+  "expertise": {
+    "ourExpertise": "Our Expertise",
+    "title": "Excellence in Action",
+    "subtitle": "Our Expertise",
+    "description": "Watch our certified technicians perform precision maintenance on wind turbines with cutting-edge equipment and unmatched expertise.",
+    "advancedSafety": {
+      "title": "Advanced Safety Protocols",
+      "description": "Every maintenance operation follows strict safety standards with specialized equipment and certified procedures."
+    },
+    "precisionMaintenance": {
+      "title": "Precision Maintenance",
+      "description": "Our technicians use state-of-the-art tools and techniques to ensure optimal turbine performance and longevity."
+    },
+    "detailedDocumentation": {
+      "title": "Detailed Documentation",
+      "description": "Complete maintenance reports and recommendations ensure transparency and future planning."
+    },
+    "uptimeRate": "Uptime Rate",
+    "responseTime": "Response Time",
+    "certifiedProfessional": "Certified Professional"
+  },
+  "emergency": {
+    "emergencyResponse": "Emergency Response",
+    "title": "Critical Maintenance",
+    "subtitle": "Under Extreme Conditions",
+    "description": "When weather conditions are harsh and turbines face critical issues, our expert technicians are ready to respond. Safety protocols, professional equipment, and years of experience ensure successful maintenance even in the most challenging environments.",
+    "emergencyResponseCard": "Emergency Response",
+    "emergencyResponseDescription": "24/7 emergency maintenance with rapid response times for urgent repairs in adverse conditions.",
+    "safetyProtocols": "Safety Protocols",
+    "safetyProtocolsDescription": "Professional harness systems and weather monitoring for extreme height safety operations.",
+    "precisionMaintenance": "Precision Maintenance",
+    "precisionMaintenanceDescription": "High-resolution diagnostic tools ensuring quality control and detailed reporting for all operations.",
+    "documentation": "Documentation",
+    "documentationDescription": "Professional photography documenting safety protocols and maintenance excellence in extreme conditions.",
+    "safetySecured": "SAFETY SECURED",
+    "highResolution": "HIGH RESOLUTION"
+  },
+  "contact": {
+    "contactUs": "Contact Us",
+    "title": "Get In Touch",
+    "subtitle": "Contact Us",
+    "description": "Ready to optimize your wind turbine performance? Contact us today for a consultation or emergency service.",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "tangierMorocco": "Tangier, Morocco",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your Name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "How can we help?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "sendMessage": "Send Message"
+    }
+  },
+  "footer": {
+    "footerText": "Leading provider of wind turbine maintenance services in Morocco.",
+    "copyright": "© 2025 STM Service. All rights reserved.",
+    "tagline": "Professional Wind Turbine Services",
+    "subtitle": "Wind Turbine Maintenance",
+    "allRightsReserved": "All rights reserved.",
+    "poweringSustainable": "Powering sustainable energy solutions in Morocco",
+    "services": "Services",
+    "ourServices": "Our Services",
+    "windTurbineMaintenance": "Wind Turbine Maintenance",
+    "technicalInspections": "Technical Inspections",
+    "repairServices": "Repair Services",
+    "emergencyResponse": "Emergency Response",
+    "company": "Company",
+    "about": "About",
+    "expertise": "Expertise",
+    "team": "Team",
+    "contact": "Contact",
+    "getInTouch": "Get in Touch",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "tangierMorocco": "Tangier, Morocco"
+  }
+}

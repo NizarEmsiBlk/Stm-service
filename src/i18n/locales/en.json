@@ -2,7 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "services": "Services",
+    "service": "Service",
     "advantages": "Advantages",
     "team": "Team",
     "contact": "Contact",
@@ -16,10 +16,10 @@
     "criticalMaintenance": "Critical maintenance 24/7"
   },
   "hero": {
-    "title": "STM Services",
+    "title": "STM Service",
     "subtitle": "Wind Turbine Maintenance",
-    "description": "Professional wind turbine maintenance and repair services in Tangier. Ensuring optimal performance and longevity of your renewable energy assets.",
-    "ourServices": "Our Services",
+    "description": "Professional wind turbine maintenance and repair service in Tangier. Ensuring optimal performance and longevity of your renewable energy assets.",
+    "ourService": "Our Service",
     "getQuote": "Get Quote",
     "expertTechnicians": "Expert Technicians at Work",
     "certifiedProfessionalsDescription": "Our certified professionals ensure the highest standards of wind turbine maintenance and safety.",
@@ -30,8 +30,8 @@
     "reliable": "Reliable"
   },
   "about": {
-    "title": "About STM Services",
-    "description1": "Located in the heart of Tangier, STM Services is your trusted partner for wind turbine maintenance and repair. With years of experience in the renewable energy sector, we provide comprehensive solutions to keep your wind energy systems operating at peak performance.",
+    "title": "About STM Service",
+    "description1": "Located in the heart of Tangier, STM Service is your trusted partner for wind turbine maintenance and repair. With years of experience in the renewable energy sector, we provide comprehensive solutions to keep your wind energy systems operating at peak performance.",
     "description2": "Our team of certified technicians combines technical expertise with a commitment to safety and excellence. We understand the critical importance of maintaining renewable energy infrastructure and work tirelessly to minimize downtime while maximizing efficiency.",
     "emergencySupport": "Emergency Support",
     "turbinesServiced": "Turbines Serviced",
@@ -40,9 +40,9 @@
     "expertTechnicians": "Expert Technicians at Work",
     "certifiedProfessionals": "Our certified professionals ensure the highest standards of wind turbine maintenance and safety."
   },
-  "services": {
+  "service": {
     "ourExpertise": "Our Expertise",
-    "title": "Our Services",
+    "title": "Our Service",
     "subtitle": "Our Expertise",
     "description": "Comprehensive wind turbine maintenance solutions to keep your renewable energy systems running at peak efficiency",
     "preventiveMaintenance": {
@@ -51,7 +51,7 @@
     },
     "emergencyRepairs": {
       "title": "Emergency Repairs",
-      "description": "24/7 emergency repair services to minimize downtime and restore operations quickly."
+      "description": "24/7 emergency repair service to minimize downtime and restore operations quickly."
     },
     "componentReplacement": {
       "title": "Component Replacement",
@@ -99,7 +99,7 @@
   "teamSafety": {
     "ourTeam": "Our Team",
     "title": "Safety First, Teamwork Always",
-    "description": "Our certified technicians work as a unified team, prioritizing safety protocols and leveraging collective expertise to deliver exceptional wind turbine maintenance services.",
+    "description": "Our certified technicians work as a unified team, prioritizing safety protocols and leveraging collective expertise to deliver exceptional wind turbine maintenance service.",
     "accidents": "Accidents",
     "teamMembers": "Team Members",
     "safetyRecord": "Safety Record",
@@ -173,17 +173,17 @@
     }
   },
   "footer": {
-    "footerText": "Leading provider of wind turbine maintenance services in Morocco.",
+    "footerText": "Leading provider of wind turbine maintenance service in Morocco.",
     "copyright": "© 2025 STM Service. All rights reserved.",
-    "tagline": "Professional Wind Turbine Services",
+    "tagline": "Professional Wind Turbine Service",
     "subtitle": "Wind Turbine Maintenance",
     "allRightsReserved": "All rights reserved.",
     "poweringSustainable": "Powering sustainable energy solutions in Morocco",
-    "services": "Services",
-    "ourServices": "Our Services",
+    "service": "Service",
+    "ourService": "Our Service",
     "windTurbineMaintenance": "Wind Turbine Maintenance",
     "technicalInspections": "Technical Inspections",
-    "repairServices": "Repair Services",
+    "repairService": "Repair Service",
     "emergencyResponse": "Emergency Response",
     "company": "Company",
     "about": "About",

@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "STM Services - Wind Turbine Maintenance ",
-  description: "Professional wind turbine maintenance services in Tangier, Morocco. Expert technicians providing preventive maintenance, emergency repairs, and safety inspections for optimal wind energy performance.",
+  title: "STM Service - Wind Turbine Maintenance ",
+  description: "Professional wind turbine maintenance service in Tangier, Morocco. Expert technicians providing preventive maintenance, emergency repairs, and safety inspections for optimal wind energy performance.",
   icons: {
     icon: [
       { url: "/favicon.ico?v=2", sizes: "any" },

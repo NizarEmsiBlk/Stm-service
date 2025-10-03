@@ -2,7 +2,7 @@
   "nav": {
     "home": "Inicio",
     "about": "Acerca de",
-    "services": "Servicios",
+    "service": "Servicios",
     "advantages": "Ventajas",
     "team": "Equipo",
     "contact": "Contacto",
@@ -16,10 +16,10 @@
     "criticalMaintenance": "Mantenimiento crítico 24/7"
   },
   "hero": {
-    "title": "STM Services",
+    "title": "STM Service",
     "subtitle": "Mantenimiento de Aerogeneradores",
     "description": "Servicios profesionales de mantenimiento y reparación de aerogeneradores en Tánger. Garantizando el rendimiento óptimo y la longevidad de sus activos de energía renovable.",
-    "ourServices": "Nuestros Servicios",
+    "ourService": "Nuestros Servicios",
     "getQuote": "Obtener Cotización",
     "expertTechnicians": "Técnicos Expertos en Acción",
     "certifiedProfessionalsDescription": "Nuestros profesionales certificados aseguran los más altos estándares de mantenimiento y seguridad de aerogeneradores.",
@@ -30,8 +30,8 @@
     "reliable": "Confiable"
   },
   "about": {
-    "title": "Acerca de STM Services",
-    "description1": "Ubicado en el corazón de Tánger, STM Services es su socio de confianza para el mantenimiento y reparación de aerogeneradores. Con años de experiencia en el sector de energías renovables, proporcionamos soluciones integrales para mantener sus sistemas de energía eólica funcionando a máximo rendimiento.",
+    "title": "Acerca de STM Service",
+    "description1": "Ubicado en el corazón de Tánger, STM Service es su socio de confianza para el mantenimiento y reparación de aerogeneradores. Con años de experiencia en el sector de energías renovables, proporcionamos soluciones integrales para mantener sus sistemas de energía eólica funcionando a máximo rendimiento.",
     "description2": "Nuestro equipo de técnicos certificados combina experiencia técnica con un compromiso con la seguridad y la excelencia. Entendemos la importancia crítica de mantener la infraestructura de energía renovable y trabajamos incansablemente para minimizar el tiempo de inactividad mientras maximizamos la eficiencia.",
     "emergencySupport": "Soporte de Emergencia",
     "turbinesServiced": "Turbinas Atendidas",
@@ -40,7 +40,7 @@
     "expertTechnicians": "Técnicos Expertos en Acción",
     "certifiedProfessionals": "Nuestros profesionales certificados aseguran los más altos estándares de mantenimiento y seguridad de aerogeneradores."
   },
-  "services": {
+  "service": {
     "ourExpertise": "Nuestra Experiencia",
     "title": "Nuestros Servicios",
     "subtitle": "Nuestra Experiencia",
@@ -178,7 +178,7 @@
   },
   "footer": {
     "subtitle": "Mantenimiento de Aerogeneradores",
-    "copyright": "© 2025 STM Services. Todos los derechos reservados.",
+    "copyright": "© 2025 STM Service. Todos los derechos reservados.",
     "tagline": "Servicios Profesionales de Aerogeneradores",
     "allRightsReserved": "Todos los derechos reservados.",
     "poweringSustainable": "Impulsando soluciones de energía sostenible en Marruecos"

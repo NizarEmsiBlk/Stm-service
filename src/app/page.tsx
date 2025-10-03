@@ -70,7 +70,7 @@ export default function Home() {
               <div className="relative">
                 <Image
                   src="/logo2.png"
-                  alt="STM Services Logo"
+                  alt="STM Service Logo"
                   width={55}
                   height={55}
                   className="rounded-2xl shadow-xl ring-4 ring-white/20 hover:ring-blue-300/50 transition-all duration-300"
@@ -78,7 +78,7 @@ export default function Home() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
               </div>
               <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-800 to-indigo-900 bg-clip-text text-transparent">STM Services</h1>
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-800 to-indigo-900 bg-clip-text text-transparent">STM Service</h1>
                 <p className="text-sm bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent font-medium">Wind Turbine Maintenance </p>
               </div>
             </div>
@@ -111,9 +111,9 @@ export default function Home() {
                 </div>
               </button>
 
-              {/* Services Button */}
+              {/* Service Button */}
               <button 
-                onClick={() => scrollToSection('services')} 
+                onClick={() => scrollToSection('service')} 
                 className="group relative px-5 py-3 rounded-xl text-gray-700 hover:text-white transition-all duration-500 font-semibold overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-xl"></div>
@@ -121,7 +121,7 @@ export default function Home() {
                   <svg className="w-4 h-4 transform group-hover:rotate-12 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd"/>
                   </svg>
-                  <span>{t('nav.services')}</span>
+                  <span>{t('nav.service')}</span>
                 </div>
               </button>
 
@@ -326,7 +326,7 @@ export default function Home() {
             <div className="relative mb-8 lg:hidden flex justify-center">
               <Image
                 src="/logo2.png"
-                alt="STM Services Logo"
+                alt="STM Service Logo"
                 width={120}
                 height={120}
                 className="rounded-3xl shadow-2xl ring-8 ring-white/20 hover:ring-blue-300/30 transition-all duration-500"
@@ -336,7 +336,7 @@ export default function Home() {
             <div className="hidden lg:block relative mb-8">
               <Image
                 src="/logo2.png"
-                alt="STM Services Logo"
+                alt="STM Service Logo"
                 width={100}
                 height={100}
                 className="rounded-2xl shadow-xl ring-4 ring-white/20 hover:ring-blue-300/30 transition-all duration-500"
@@ -357,10 +357,10 @@ export default function Home() {
             
             <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
               <button 
-                onClick={() => scrollToSection('services')}
+                onClick={() => scrollToSection('service')}
                 className="group relative bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-blue-600/25"
               >
-                <span className="relative z-10">{t('hero.ourServices')}</span>
+                <span className="relative z-10">{t('hero.ourService')}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-2xl blur opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
               </button>
               <button 
@@ -381,7 +381,7 @@ export default function Home() {
                 <div className="overflow-hidden rounded-2xl relative">
                   <Image
                     src="/hero.png"
-                    alt="STM Services - Professional Wind Turbine Maintenance"
+                    alt="STM Service - Professional Wind Turbine Maintenance"
                     width={800}
                     height={600}
                     className="w-full h-auto object-cover transform group-hover:scale-110 transition-all duration-1000"
@@ -434,7 +434,7 @@ export default function Home() {
             <div className="relative mb-12">
               <Image
                 src="/logo2.png"
-                alt="STM Services Logo"
+                alt="STM Service Logo"
                 width={140}
                 height={140}
                 className="mx-auto rounded-3xl shadow-2xl ring-8 ring-white/20 hover:ring-blue-300/30 transition-all duration-500"
@@ -443,7 +443,7 @@ export default function Home() {
             </div>
             
             <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-blue-800 via-indigo-700 to-blue-900 bg-clip-text text-transparent mb-8 animate-slide-in-left leading-tight">
-              STM Services
+              STM Service
             </h1>
             
             <div className="relative mb-10">
@@ -454,15 +454,15 @@ export default function Home() {
             </div>
             
             <p className="text-xl text-gray-600 mb-14 max-w-3xl mx-auto animate-fade-in leading-relaxed font-light">
-              Professional wind turbine maintenance and repair services . 
+              Professional wind turbine maintenance and repair service . 
               Ensuring optimal performance and longevity of your renewable energy assets with cutting-edge technology and expert care.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-up">
               <button 
-                onClick={() => scrollToSection('services')}
+                onClick={() => scrollToSection('service')}
                 className="group relative bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-10 py-4 rounded-2xl font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-blue-500/25"
               >
-                <span className="relative z-10">Our Services</span>
+                <span className="relative z-10">Our Service</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-2xl blur opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
               </button>
               <button 
@@ -478,7 +478,7 @@ export default function Home() {
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ChevronDownIcon 
             className="w-8 h-8 text-blue-600 cursor-pointer hover:text-blue-800 transition-colors"
-            onClick={() => scrollToSection('services')}
+            onClick={() => scrollToSection('service')}
           />
         </div>
         
@@ -499,7 +499,7 @@ export default function Home() {
                 <div className="relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-white/10">
                   <Image
                     src="/about.png"
-                    alt="STM Services Technician performing wind turbine maintenance"
+                    alt="STM Service Technician performing wind turbine maintenance"
                     width={600}
                     height={400}
                     className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
@@ -564,16 +564,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-24 bg-gradient-to-br from-white via-gray-50 to-blue-50/30">
+      {/* Service Section */}
+      <section id="service" className="py-24 bg-gradient-to-br from-white via-gray-50 to-blue-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 animate-fade-in-up">
             <div className="inline-block mb-4">
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-sm font-semibold tracking-wider uppercase">{t('services.ourExpertise')}</span>
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-sm font-semibold tracking-wider uppercase">{t('service.ourExpertise')}</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-800 to-indigo-900 bg-clip-text text-transparent mb-6">{t('services.title')}</h2>
+            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-800 to-indigo-900 bg-clip-text text-transparent mb-6">{t('service.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              {t('services.description')}
+              {t('service.description')}
             </p>
             <div className="mt-6 w-24 h-1 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full mx-auto"></div>
           </div>
@@ -581,33 +581,33 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: t('services.preventiveMaintenance.title'),
-                description: t('services.preventiveMaintenance.description'),
+                title: t('service.preventiveMaintenance.title'),
+                description: t('service.preventiveMaintenance.description'),
                 icon: "🔧"
               },
               {
-                title: t('services.emergencyRepairs.title'),
-                description: t('services.emergencyRepairs.description'),
+                title: t('service.emergencyRepairs.title'),
+                description: t('service.emergencyRepairs.description'),
                 icon: "⚡"
               },
               {
-                title: t('services.componentReplacement.title'),
-                description: t('services.componentReplacement.description'),
+                title: t('service.componentReplacement.title'),
+                description: t('service.componentReplacement.description'),
                 icon: "🔄"
               },
               {
-                title: t('services.performanceOptimization.title'),
-                description: t('services.performanceOptimization.description'),
+                title: t('service.performanceOptimization.title'),
+                description: t('service.performanceOptimization.description'),
                 icon: "📊"
               },
               {
-                title: t('services.safetyInspections.title'),
-                description: t('services.safetyInspections.description'),
+                title: t('service.safetyInspections.title'),
+                description: t('service.safetyInspections.description'),
                 icon: "🛡️"
               },
               {
-                title: t('services.technicalConsultancy.title'),
-                description: t('services.technicalConsultancy.description'),
+                title: t('service.technicalConsultancy.title'),
+                description: t('service.technicalConsultancy.description'),
                 icon: "💡"
               }
             ].map((service, index) => (
@@ -770,7 +770,7 @@ export default function Home() {
                   <div className="overflow-hidden rounded-2xl">
                     <Image
                       src="/technicians.png"
-                      alt="STM Services team of technicians working together with safety equipment"
+                      alt="STM Service team of technicians working together with safety equipment"
                       width={700}
                       height={500}
                       className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
@@ -1160,7 +1160,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold">{t('contact.email')}</h3>
-                    <p className="text-gray-600">info@stmservices.ma</p>
+                    <p className="text-gray-600">info@stmservice.ma</p>
                   </div>
                 </div>
                 
@@ -1231,13 +1231,13 @@ export default function Home() {
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
               <Image
                 src="/logo2.png"
-                alt="STM Services Logo"
+                alt="STM Service Logo"
                 width={40}
                 height={40}
                 className="rounded-full"
               />
               <div>
-                <h3 className="text-xl font-bold">STM Services</h3>
+                <h3 className="text-xl font-bold">STM Service</h3>
                 <p className="text-blue-300 text-sm">{t('footer.subtitle')}</p>
               </div>
             </div>

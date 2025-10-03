@@ -2,7 +2,7 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
-    "services": "Services",
+    "service": "Service",
     "advantages": "Avantages",
     "team": "Équipe",
     "contact": "Contact",
@@ -16,10 +16,10 @@
     "criticalMaintenance": "Maintenance critique 24h/24"
   },
   "hero": {
-    "title": "STM Services",
+    "title": "STM Service",
     "subtitle": "Maintenance d'Éoliennes",
-    "description": "Services professionnels de maintenance et de réparation d'éoliennes à Tanger. Garantir une performance optimale et la longévité de vos actifs d'énergie renouvelable.",
-    "ourServices": "Nos Services",
+    "description": "Service professionnels de maintenance et de réparation d'éoliennes à Tanger. Garantir une performance optimale et la longévité de vos actifs d'énergie renouvelable.",
+    "ourService": "Nos Service",
     "getQuote": "Obtenir un Devis",
     "expertTechnicians": "Techniciens Experts au Travail",
     "certifiedProfessionalsDescription": "Nos professionnels certifiés garantissent les plus hauts standards de maintenance et de sécurité des éoliennes.",
@@ -30,8 +30,8 @@
     "reliable": "Fiable"
   },
   "about": {
-    "title": "À propos de STM Services",
-    "description1": "Situé au cœur de Tanger, STM Services est votre partenaire de confiance pour la maintenance et la réparation d'éoliennes. Avec des années d'expérience dans le secteur des énergies renouvelables, nous fournissons des solutions complètes pour maintenir vos systèmes d'énergie éolienne en fonctionnement optimal.",
+    "title": "À propos de STM Service",
+    "description1": "Situé au cœur de Tanger, STM Service est votre partenaire de confiance pour la maintenance et la réparation d'éoliennes. Avec des années d'expérience dans le secteur des énergies renouvelables, nous fournissons des solutions complètes pour maintenir vos systèmes d'énergie éolienne en fonctionnement optimal.",
     "description2": "Notre équipe de techniciens certifiés combine expertise technique et engagement envers la sécurité et l'excellence. Nous comprenons l'importance critique de maintenir l'infrastructure d'énergie renouvelable et travaillons sans relâche pour minimiser les temps d'arrêt tout en maximisant l'efficacité.",
     "emergencySupport": "Support d'Urgence",
     "turbinesServiced": "Éoliennes Entretenues",
@@ -40,9 +40,9 @@
     "expertTechnicians": "Techniciens Experts au Travail",
     "certifiedProfessionals": "Nos professionnels certifiés garantissent les plus hauts standards de maintenance et de sécurité des éoliennes."
   },
-  "services": {
+  "service": {
     "ourExpertise": "Notre Expertise",
-    "title": "Nos Services",
+    "title": "Nos Service",
     "subtitle": "Notre Expertise",
     "description": "Solutions complètes de maintenance d'éoliennes pour maintenir vos systèmes d'énergie renouvelable en fonctionnement optimal",
     "preventiveMaintenance": {
@@ -51,7 +51,7 @@
     },
     "emergencyRepairs": {
       "title": "Réparations d'Urgence",
-      "description": "Services de réparation d'urgence 24h/24 pour minimiser les temps d'arrêt et restaurer rapidement les opérations."
+      "description": "Service de réparation d'urgence 24h/24 pour minimiser les temps d'arrêt et restaurer rapidement les opérations."
     },
     "componentReplacement": {
       "title": "Remplacement de Composants",
@@ -99,7 +99,7 @@
   "teamSafety": {
     "ourTeam": "Notre Équipe",
     "title": "Sécurité d'Abord, Travail d'Équipe Toujours",
-    "description": "Nos techniciens certifiés travaillent en équipe unifiée, priorisant les protocoles de sécurité et tirant parti de l'expertise collective pour fournir des services exceptionnels de maintenance d'éoliennes.",
+    "description": "Nos techniciens certifiés travaillent en équipe unifiée, priorisant les protocoles de sécurité et tirant parti de l'expertise collective pour fournir des service exceptionnels de maintenance d'éoliennes.",
     "accidents": "Accidents",
     "teamMembers": "Membres de l'Équipe",
     "safetyRecord": "Dossier de Sécurité",
@@ -174,7 +174,7 @@
   },
   "footer": {
     "subtitle": "Maintenance d'Éoliennes",
-    "copyright": "© 2025 STM Services. Tous droits réservés.",
+    "copyright": "© 2025 STM Service. Tous droits réservés.",
     "tagline": "Alimenter les solutions d'énergie durable au Maroc"
   }
 }
